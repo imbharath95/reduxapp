@@ -1,10 +1,10 @@
-
+// src/app/store.js
 import { configureStore } from '@reduxjs/toolkit';
-import exampleReducer from '../features/apislice';
+import postsReducer from '../features/postsSlice';
 
 const store = configureStore({
   reducer: {
-    example: exampleReducer,
+    posts: postsReducer,
   },
 });
 
